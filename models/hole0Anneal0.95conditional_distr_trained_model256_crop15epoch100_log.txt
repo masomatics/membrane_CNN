@@ -1,0 +1,6 @@
+test loss:inf
+chance lebel(accuracy)0.5
+test accuracy(%)0.584730645737
+confusion_matrix:
+[[ 108710.    3410.]
+ [  89710.   22410.]]

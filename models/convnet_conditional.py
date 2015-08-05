@@ -12,7 +12,7 @@ class convnet_cdd(chainer.FunctionSet):
     
     def __init__(self,patchsize):
         
-        patchsize = 15
+        #patchsize = 15
         channel1 = 20.
         filtsize1 = 5. #3
         padsize1 = 0.
