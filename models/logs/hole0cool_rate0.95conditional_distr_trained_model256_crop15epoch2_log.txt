@@ -1,0 +1,10 @@
+test loss:inf
+chance lebel(accuracy)0.5
+test accuracy(%)63.5002675705
+confusion_matrix:
+[[ 104135.    7985.]
+ [  73862.   38258.]]
+Done with the model 
+
+hole0_cool_rate0.95conditional_distr_trained_model256_crop15epoch2.pkl
+2015-08-08 05:18:35.910605

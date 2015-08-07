@@ -1,0 +1,6 @@
+test loss:0.339641094208
+chance lebel(accuracy)0.5
+test accuracy(%)84.5032108455
+confusion_matrix:
+[[  83605.   28515.]
+ [   6235.  105885.]]

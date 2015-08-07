@@ -1,0 +1,11 @@
+Cropsize :15,  Resolution :256,  Epoch : 10, Boringsize : 0
+cooling_rate:0.95, initial temperature:1.5, final temperature:0.898105408858
+importing the required modules ... 
+COMPLETE 
+
+Loading the preprocessed test data and training data ... 
+44848
+now index :0
+now index :5000
+now index :10000
+now index :15000
