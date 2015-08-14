@@ -40,7 +40,7 @@ def make_data_set(data_path,  patchsize = 33,label_data_path = '',  file_index =
             y_data[i] = np.int(imgnames_and_labels_data[i,1])
             if(i%5000==0):
                 print 'now index :' + str(i)
-
+                
         dataset = {'x_data':x_data,'y_data':y_data}
         return dataset
     else:
@@ -62,6 +62,7 @@ def make_data_set(data_path,  patchsize = 33,label_data_path = '',  file_index =
             
             if(i%5000==0):
                 print 'now index :' + str(i)
+               
         dataset = {'x_data':x_data,'label_x_data': label_x_data, 'y_data':y_data}
         return dataset    
 

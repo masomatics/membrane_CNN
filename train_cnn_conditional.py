@@ -88,7 +88,8 @@ class train_cnn_cdd(object):
             dataslice_train = loadt.make_data_set(datapath_train, patchsize =self.cropsize\
                                                   ,label_data_path = label_datapath_train, is_training = True, boring_size = boringsize)
         
-            pickle.dump({'test': dataslice_test , 'train':dataslice_train}, open('/home/koyama-m/Research/membrane_CNN/data/temp_data/temp_dataset_with_hole.pkl','wb') ) 
+            pickle.dump({'test': dataslice_test , 'train':dataslice_train},\
+                        open('/home/koyama-m/Research/membrane_CNN/data/temp_data/temp_dataset_with_hole.pkl','wb'),pickle.HIGHEST_PROTOCOL) 
             
         dataset = pickle.load(open('/home/koyama-m/Research/membrane_CNN/data/temp_data/temp_dataset_with_hole.pkl','rb'))         
         dataslice_test = dataset['test'] 

@@ -3,9 +3,10 @@ import sys
 import chainer
 import chainer.functions as F
 from chainer import cuda, Function, FunctionSet, gradient_check, Variable, optimizers
+from matplotlib import pyplot as plt
+from PIL import Image
 import cPickle as pickle
-
-
+cuda.init()
 
 patch_size = 15
 parentpath= '/home/koyama-m/Research/membrane_CNN/'
@@ -20,9 +21,10 @@ probmap_prefix = 'multi_crop_prediction_image_256_'
 binmap_prefix = 'multi_crop_prediction_binary_image_256_' 
 #multi_crop_prediction_binary_image_256_001.tif
 #hole0_cool_rate0.95conditional_distr_trained_model256_crop15epoch100.pkl
-modelname = 'hole0_cool_rate0.95conditional_distr_trained_model256_crop15epoch1.pkl'
-modelname = 'trained_model256_crop15epoch100.pkl'
+modelname = 'hole0_cool_rate0.95conditional_distr_trained_model256_crop15epoch100.pkl'
+#modelname = 'trained_model256_crop15epoch100.pkl'
 
 print models_path +modelname
 
 model = pickle.load(open(models_path +modelname ))
+model = model.to_gpu()

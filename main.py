@@ -2,10 +2,10 @@ import train_cnn_script as tc
 
 cropsize = 15
 resolution = 256
-epochsize = 5
+epochsize = 80
 cooling_rate = 0.95
 initial_temperature = 1.5
-boringsize = 0 
+boringsize = 2 
 
 
 
