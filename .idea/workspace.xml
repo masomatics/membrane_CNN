@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="325fab73-9273-408a-af3c-59d8f6249dc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/make_laplace_data.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/utils/generate_laplace_pyramid_trainset.py" afterPath="$PROJECT_DIR$/utils/generate_laplace_pyramid.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/generate_laplace_pyramid.py" afterPath="$PROJECT_DIR$/utils/generate_laplace_pyramid.py" />
     </list>
     <ignored path="membrane_CNN.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate_laplace_pyramid.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="generate_laplace_pyramid.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/generate_laplace_pyramid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.1923077">
+              <caret line="32" column="98" selection-start-line="32" selection-start-column="98" selection-end-line="32" selection-end-column="98" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -76,10 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="make_laplace_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="make_laplace_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/make_laplace_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07692308">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
@@ -132,8 +131,8 @@
         <option value="$PROJECT_DIR$/gibbs.py" />
         <option value="$PROJECT_DIR$/gibbs_main.py" />
         <option value="$PROJECT_DIR$/utils/generate_laplace_pyramid_trainset.py" />
-        <option value="$PROJECT_DIR$/utils/generate_laplace_pyramid.py" />
         <option value="$PROJECT_DIR$/make_laplace_data.py" />
+        <option value="$PROJECT_DIR$/utils/generate_laplace_pyramid.py" />
       </list>
     </option>
   </component>
@@ -839,21 +838,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/generate_laplace_pyramid.py">
+    <entry file="file://$PROJECT_DIR$/make_laplace_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/make_laplace_data.py">
+    <entry file="file://$PROJECT_DIR$/utils/generate_laplace_pyramid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07692308">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.1923077">
+          <caret line="32" column="98" selection-start-line="32" selection-start-column="98" selection-end-line="32" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

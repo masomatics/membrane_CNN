@@ -30,7 +30,7 @@ class Generate_laplace_pyramid(object):
         original_label_filepath = 'raw/train-labels'
         reconstr_image_path = "reconstructed_256images_crop%s/" %self.patchsize_for_rcstr_data
 
-        save_files_path ="/home/koyama-m/Research/membrane_CNN/data/preprocessed/training_laplace"
+        save_files_path ="/home/koyama-m/Research/membrane_CNN/data/preprocessed/training_laplace/"
 
 
         parentpath= '/home/koyama-m/Research/membrane_CNN/'
@@ -44,18 +44,19 @@ class Generate_laplace_pyramid(object):
 
             filename_original_raw = "pooled_image_%03d.tif" %slice_index
             filename_original_label = 'edgemap%03d.tif' %slice_index
-            #reconstr_label_filename = 'multi_crop_prediction_binary_image_%s_%03d.tif'%(self.resolution, slice_index)
+            reconstr_label_filename = 'multi_crop_prediction_binary_image_%s_%03d.tif'%(self.resolution, slice_index)
             #reconstr_prob_filename = 'multi_crop_prediction_image_%s_%03d.tif'%(self.resolution, slice_index)
 
             raw_original = Image.open(original_raw_filepath + filename_original_raw)
             real_label_original = Image.open("%s/data/%s/%s" % (parentpath, original_label_filepath, filename_original_label ))
-            #reconstr_label_original= Image.open("%sdata/%s/%s" % (parentpath, reconstr_image_path, reconstr_label_filename))
+            reconstr_label_original= Image.open("%sdata/%s/%s" % (parentpath, reconstr_image_path, reconstr_label_filename))
             #reconstr_prob_original= Image.open("%sdata/%s/%s" % (parentpath, reconstr_image_path, reconstr_prob_filename))
 
             raw_image = raw_original.crop(crop_range)
             real_label = real_label_original.crop(crop_range)
+            reconstr_label = reconstr_label_original
 
-            reshape_dimen= self.resolution-patchsize_for_rcstr_data
+            reshape_dimen= self.resolution-self.patchsize_for_rcstr_data
             real_label_array = np.array(list(real_label.getdata())).reshape(reshape_dimen,reshape_dimen)/255.
             recontsr_label_array = np.array(list(reconstr_label.getdata())).reshape(reshape_dimen,reshape_dimen)/255.
 
