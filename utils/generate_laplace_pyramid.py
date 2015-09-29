@@ -9,7 +9,7 @@ from PIL import Image
 import cPickle as pickle
 
 
-class generate_laplace_pyramid_trainset(object):
+class Generate_laplace_pyramid(object):
 
     def __init__(self, patchsize_for_rcstr_data = 15,  resolution = 256, numslice = 100):
         self.patchsize_for_rcstr_data = patchsize_for_rcstr_data
@@ -17,7 +17,7 @@ class generate_laplace_pyramid_trainset(object):
         self.numslice = 100
         pass
 
-    def createfiles(self):
+    def run(self):
 
         #TRAINING
         # (1) Save shifted raw files   at ~/Research/membrane_CNN/data/preprocessed/training_laplace
