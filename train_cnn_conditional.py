@@ -297,6 +297,7 @@ class train_cnn_cdd(object):
         print 'Reshaping the dataset '
         ##### reshape x for cnn  #####
 
+
         
         x_train = np.zeros((pre_x_train.shape[0], 2,pre_x_train.shape[1],pre_x_train.shape[1]))
         x_train[:,0,:,:] = pre_x_train
